@@ -1,0 +1,6 @@
+#crear usuario administrador
+net user nombre_de_usuario /add
+net user  nombre_de_usuario *
+net localgroup administradores nombre_de_usuario /add
+net localgroup administradores nombre_de_usuario /delete
+net user administrador /active:yes
